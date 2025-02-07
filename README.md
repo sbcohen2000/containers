@@ -14,7 +14,7 @@ update.
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `new HAMT()`                          | Construct a new `HAMT`.                                                                                                                                                 |
 | `size: number`                        | Get the number of elements in the map.                                                                                                                                  |
-| `get(key: string): V | undefined`     | Retrieve a value from the map (or undefined if no such key exists).                                                                                                     |
+| `get(key: string): V \| undefined`     | Retrieve a value from the map (or undefined if no such key exists).                                                                                                     |
 | `set(key: string, value: V): HAMT<V>` | Associate a key-value pair in the map, returning a new map, containing the given key. If the key already exists in the map, its value is replaced in the resulting map. |
 
 ## Red-Black Tree
@@ -26,7 +26,7 @@ key ordering, enabling _structural_ comparisons of the key.
 |----------------------------------------|------------------------------------------------------------------------------------------------------------|
 | `new RBTree(compareFn?: CompareFn<K>)` | Construct a new `RBTree`, optionally providing a comparison function on keys.                              |
 | `has(key: K): boolean`                 | Check if the map contains a value with the given key.                                                      |
-| `get(key: K): V | undefined`           | Retrieve a value by its key, returning undefined if the value isn't in the map.                            |
+| `get(key: K): V \| undefined`           | Retrieve a value by its key, returning undefined if the value isn't in the map.                            |
 | `set(key: K, value: V): RBTree<K, V>`  | Associate a key with a value. If the key is already associated with a value, the value is updated.         |
 | `delete(key: K): boolean`              | Delete a key and its associated value from the map. If the key does not exist in the map, this is a no-op. |
 | `size: number`                         | Get the number of elements in the map.                                                                     |
@@ -43,7 +43,7 @@ given query interval.
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | `new IntervalTree()`                                 | Construct a new `IntervalTree`                                                                                                 |
 | `has(interval: Interval)`                            | Check if the interval tree contains a value with the given interval.                                                           |
-| `get(interval: Interval): V`                         | Retrieve a value by its interval, returning undefined if the value isn't in the map.                                           |
+| `get(interval: Interval): V \| undefined`                         | Retrieve a value by its interval, returning undefined if the value isn't in the map.                                           |
 | `set(interval: Interval, value: V): IntervalTree<V>` | Associate an interval with a value. If the interval already exists within the map, then the value at the interval is replaced. |
 | `delete(interval: Interval): boolean`                | Delete an interval and its associated value from the tree. If the interval does not exist in the map, this is a no-op.         |
 | `*search(query: Interval): IterableIterator<V>`      | Find all of the values which intersect the given interval.                                                                     |
