@@ -6,7 +6,8 @@
         "rootDir": "./src",
         "strict": false,
         "target": "es2017",
-        "types": []
+        "types": [],
+        "module": "commonjs"
     },
     "include": ["src/**/*"]
 }
