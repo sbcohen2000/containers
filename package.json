@@ -5,6 +5,11 @@
     "license": "MIT",
     "author": "Sam Cohen",
     "main": "./dist/index.d.ts",
+    "homepage": "https://github.com/sbcohen2000/containers",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sbcohen2000/containers.git"
+    },
     "scripts": {
         "build": "tsc",
         "test": "jest"
@@ -15,5 +20,8 @@
         "jest": "^29.7.0",
         "ts-jest": "^29.2.5",
         "typescript": "^5.7.3"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
