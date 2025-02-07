@@ -1,0 +1,19 @@
+{
+    "name": "@sbcohen/containers",
+    "version": "1.0.0",
+    "description": "A collection of various useful container datastructures.",
+    "license": "MIT",
+    "author": "Sam Cohen",
+    "main": "./dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "fast-check": "^3.23.2",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.2.5",
+        "typescript": "^5.7.3"
+    }
+}

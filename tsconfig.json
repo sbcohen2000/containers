@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "esModuleInterop": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": false,
+        "target": "es2017",
+        "types": []
+    },
+    "include": ["src/**/*"]
+}
